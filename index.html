@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- ТРЕБОВАНИЕ: НАИМЕНОВАНИЕ -->
+    <title>Фанатский сайт о "Ведьмаке"</title>
+    
+    <!-- ТРЕБОВАНИЕ: МЕТА-ТЕГИ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о вселенной Ведьмака - книги, игры, персонажи">
+    <meta name="keywords" content="Ведьмак, Геральт, Сапковский, игра, книга">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- ТРЕБОВАНИЕ: ЗАГОЛОВКИ РАЗНЫХ УРОВНЕЙ -->
+        <h1>Вселенная Ведьмака</h1> <!-- Уровень 1 -->
+        <h2>Добро пожаловать в мир чудовищ, магии и интриг</h2> <!-- Уровень 2 -->
+        
+        <!-- Навигация между страницами -->
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="books.html">Книги</a> |
+            <a href="games.html">Игры</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ТРЕБОВАНИЕ: ТЕКСТЫ -->
+        <p>«Ведьмак» — серия романов польского писателя Анджея Сапковского в жанре фэнтези.</p>
+        
+        <!-- ТРЕБОВАНИЕ: ИЗОБРАЖЕНИЕ С ОБТЕКАНИЕМ -->
+        <div class="image-block">
+    <img src="images/geralt.jpg" alt="Геральт" style="float: left; width: 150px; margin: 0 15px 10px 0;">
+    <p>Геральт из Ривии — главный герой, ведьмак, профессиональный охотник на чудовищ.</p>
+    <div style="clear: both;"></div> <!-- Очистка обтекания -->
+</div>
+
+<p style="margin: 20px 0;">Текст после изображения без обтекания.</p>
+
+<div class="image-block">
+    <img src="images/ciri.jpg" alt="Цири" style="float: right; width: 250px; margin: 0 0 10px 15px;">
+    <p>Цирилла Фиона Элен Рианнон, или просто Цири, — детская императрица Нильфгаарда.</p>
+    <div style="clear: both;"></div>
+</div>
+        
+        <!-- ТРЕБОВАНИЕ: ВНУТРЕННИЕ ССЫЛКИ (ЯКОРЯ) -->
+        <p><a href="#characters">↓ Перейти к персонажам</a></p>
+        
+        <!-- ТРЕБОВАНИЕ: ТАБЛИЦА -->
+        <h3 id="characters">Персонажи серии</h3>
+        <table border="1">
+            <tr>
+                <th>Имя</th>
+                <th>Роль</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Геральт</td>
+                <td>Ведьмак</td>
+                <td>Главный герой, мутант</td>
+            </tr>
+            <tr>
+                <td>Йеннифэр</td>
+                <td>Чародейка</td>
+                <td>Возлюбленная Геральта</td>
+            </tr>
+            <tr>
+                <td>Лютик</td>
+                <td>Бард</td>
+                <td>Лучший друг Геральта</td>
+            </tr>
+        </table>
+        
+        <!-- ТРЕБОВАНИЕ: СПИСКИ -->
+        <h3>Основные саги:</h3>
+        <ol>
+            <li>Последнее желание</li>
+            <li>Меч Предназначения</li>
+            <li>Кровь эльфов</li>
+            <li>Час Презрения</li>
+            <li>Крещение огнём</li>
+        </ol>
+        
+        <!-- ТРЕБОВАНИЕ: ВНЕШНИЕ ССЫЛКИ -->
+        <h3>Полезные ресурсы:</h3>
+        <ul>
+            <li><a href="https://witcher.fandom.com/ru" target="_blank">Фэндом Ведьмака</a></li>
+        </ul>
+        
+        <!-- Блок для скриптов -->
+        <div class="scripts">
+            <h3>JavaScript демонстрация</h3>
+            <button onclick="showDate()">Показать дату</button>
+            <button onclick="changeBackground()">Сменить фон</button>
+            <button onclick="removeLongWords()">Удалить длинные слова</button>
+            
+            <p id="textToScroll">Геральт из Ривии — ведьмак, профессиональный охотник на чудовищ. Он странствует по Континенту, выполняя заказы по устранению опасных существ.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Cайт о Ведьмаке. Лабораторная работа №3.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
